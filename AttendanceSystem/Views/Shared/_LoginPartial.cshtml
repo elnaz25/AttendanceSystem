@@ -1,0 +1,23 @@
+﻿@using System.Web.Security;
+@using Newtonsoft.Json;
+@using AttendanceSystem.Models;
+
+@{
+
+	Users userinfo = JsonConvert.DeserializeObject<Users>(User.Identity.Name);
+
+
+}
+
+
+@if (Request.IsAuthenticated)
+{
+	<ul class="nav navbar-nav navbar-right">
+		<li>
+			<a href="#">
+				Wellcome @userinfo.FirstName  @userinfo.LastName
+			</a>
+		</li>
+		<li>@Html.ActionLink("Logout", "LogOff", "Account", new { area = "" }, new { @class = "navbar-brand" })</li>
+	</ul>
+}
