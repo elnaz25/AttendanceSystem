@@ -47,7 +47,7 @@ namespace AttendanceSystem.Controllers
 
         [System.Web.Http.HttpPost, System.Web.Http.ActionName("Create")]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,FirstName,LastName, Salary, BirthDate, Email, Password, ConfirmPassword, UserRoles")] Users users)
+        public ActionResult Create([Bind(Include = "ID,FirstName,LastName, Salary, BirthDate, Email, Password, ConfirmPassword, UserRole")] Users users)
         {
             if(ModelState.IsValid)
             {
@@ -77,7 +77,7 @@ namespace AttendanceSystem.Controllers
 
         [System.Web.Http.HttpPost, System.Web.Http.ActionName("Edite")]
         [ValidateAntiForgeryToken]
-        public ActionResult Edite([Bind(Include = "ID,FirstName,LastName, Salary, BirthDate, Email, Password, ConfirmPassword, UserRoles")] Users users)
+        public ActionResult Edite([Bind(Include = "ID,FirstName,LastName, Salary, BirthDate, Email, Password, ConfirmPassword, UserRole")] Users users)
         {
             if (ModelState.IsValid)
             {

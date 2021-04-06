@@ -26,15 +26,16 @@ namespace AttendanceSystem
 				{
 					try
 					{
-						string Email = FormsAuthentication.Decrypt(Request.Cookies[FormsAuthentication.FormsCookieName].Value).Name;
-						string roles = string.Empty;
+                        string Email = FormsAuthentication.Decrypt(Request.Cookies[FormsAuthentication.FormsCookieName].Value).Name;
+                        string roles = string.Empty;
 
 
-						Users Loginemployee = JsonConvert.DeserializeObject<Users>(Email);
-						roles = Loginemployee.UserRole;
-						e.User = new System.Security.Principal.GenericPrincipal(
-						new System.Security.Principal.GenericIdentity(Email, "Forms"), roles.Split(';'));
-					}
+                        Users Loginemployee = JsonConvert.DeserializeObject<Users>(Email);
+                        roles = Loginemployee.UserRole;
+
+                        e.User = new System.Security.Principal.GenericPrincipal(
+                        new System.Security.Principal.GenericIdentity(Email, "Forms"), roles.Split(';'));
+                    }
 					catch (Exception)
 					{
 					}

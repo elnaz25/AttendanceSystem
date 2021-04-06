@@ -6,13 +6,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Security.Policy;
-using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Security;
-using System.Web.UI.WebControls;
 
 namespace AttendanceSystem.Controllers
 {
@@ -32,7 +27,7 @@ namespace AttendanceSystem.Controllers
                 {
                     FirstName = "admin",
                     LastName = "admini",
-                    BirthDate = Convert.ToDateTime("1376/11/25"),
+                    BirthDate = Convert.ToDateTime("25/11/1376"),
                     Salary = 0,
                     Email = AdminEmail,
                     Password = Password,

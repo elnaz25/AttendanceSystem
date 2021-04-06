@@ -237,7 +237,6 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="ApplicationInsights.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -269,15 +268,6 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
-    <Content Include="Views\UserView\Create.cshtml" />
-    <Content Include="Views\UserView\Delete.cshtml" />
-    <Content Include="Views\UserView\Edite.cshtml" />
-    <Content Include="Views\UserView\Details.cshtml" />
-    <Content Include="Views\UserView\UsersView.cshtml" />
-    <Content Include="Views\AttendanceView\Delete.cshtml" />
-    <Content Include="Views\AttendanceView\Edite.cshtml" />
-    <Content Include="Views\AttendanceView\AttendancesViews.cshtml" />
-    <Content Include="Views\AttendanceView\TotalAttendance.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202104050726189_InitialCreate.resx">
